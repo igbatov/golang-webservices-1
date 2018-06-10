@@ -7,6 +7,11 @@ import (
 	"sort"
 )
 
+type orderedMsg struct {
+	data string
+	order int
+}
+
 func ExecutePipeline(args ...job) {
 	wg := &sync.WaitGroup{}
 	firstCh := make(chan interface{})
@@ -28,14 +33,34 @@ func PipeFunc(wg *sync.WaitGroup, f job, in, out chan interface{}) {
 }
 
 func SingleHash(in, out chan interface{}) {
-	data := <-in
-	md5 := DataSignerMd5(data.(string))
+	crcCh := make(chan orderedMsg)
+	defer close(crcCh)
 
-	ch1 := make(chan string)
-	ch2 := make(chan string)
+	dataStr := ""
+	cnt := 0
+	for data := range in {
+		dataStr = strconv.Itoa(data.(int))
+		md5 := DataSignerMd5(dataStr)
+		go calcFirstStep(crcCh, dataStr, md5, cnt)
+		cnt++
+	}
 
-	go calcCRC(data, ch1)
-	go calcCRC(md5, ch2)
+	crcResults := make([]string, cnt, 100)
+
+	for i:=0; i<cnt; i++ {
+		result := <- crcCh
+		crcResults[result.order] = result.data
+	}
+
+	out <-crcResults
+}
+
+func calcFirstStep(out chan orderedMsg, data string, md5 string, order int) {
+	ch1 := make(chan orderedMsg)
+	ch2 := make(chan orderedMsg)
+
+	go calcCRC(data, ch1, 0)
+	go calcCRC(md5, ch2, 0)
 
 	crc := <-ch1
 	close(ch1)
@@ -43,37 +68,51 @@ func SingleHash(in, out chan interface{}) {
 	crcmd := <-ch2
 	close(ch2)
 
-	out <- strings.Join([]string{crc, crcmd}, "~")
+	out <- orderedMsg{data: strings.Join([]string{crc.data, crcmd.data}, "~"), order: order}
 }
 
-func calcCRC(data interface{}, out <-chan string) {
-	out <- DataSignerCrc32(data.(string))
+func calcCRC(data string, out chan<- orderedMsg, order int) {
+	out <- orderedMsg{data: DataSignerCrc32(data), order: order}
 }
 
 func MultiHash(in, out chan interface{}) {
+	incomeArr := <-in
+
+	ch := make(chan orderedMsg)
+	cnt := 0
+	for _, data := range incomeArr.([]string) {
+		go calcSecondStep(data, ch, cnt)
+		cnt++
+	}
+
+	results := make([]string, cnt, 100)
+
+	for i:=0; i<cnt; i++ {
+		res := <-ch
+		results[res.order] = res.data
+	}
+
+	out <- results
+}
+
+func calcSecondStep(data string, out chan orderedMsg, order int) {
 	NUM := 6
-	data := <-in
-	channels := make([]chan string, NUM)
+	ch := make(chan orderedMsg)
 	results := make([]string, NUM)
 	for i:=0; i<NUM; i++ {
-		ch := make(chan string)
-		channels[i] = ch
-		go calcCRC(strconv.Itoa(i) + data.(string), ch)
+		go calcCRC(strconv.Itoa(i) + data, ch, i)
 	}
 
-	for i, ch := range channels {
-		results[i] = <-ch
+	for i:=0; i<NUM; i++ {
+		res := <-ch
+		results[res.order] = res.data
 	}
 
-	out <- strings.Join(results, "")
+	out <- orderedMsg{data: strings.Join(results, ""), order: order}
 }
 
 func CombineResults(in, out chan interface{}) {
-	IN_LIMIT := 100
-	results := make([]string, IN_LIMIT)
-	for data := range in {
-		results = append(results, data.(string))
-	}
-	sort.Strings(results)
-	out <- strings.Join(results, "_")
+	results := <-in
+	sort.Strings(results.([]string))
+	out <- strings.Join(results.([]string), "_")
 }
