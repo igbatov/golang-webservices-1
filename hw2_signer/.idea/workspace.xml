@@ -14,8 +14,8 @@
       <file leaf-file-name="hw2.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw2.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+            <state relative-caret-position="986">
+              <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -23,8 +23,8 @@
       <file leaf-file-name="signer.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/signer.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="17">
+              <caret line="94" column="18" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -32,7 +32,7 @@
       <file leaf-file-name="panic.go" pinned="false" current-in-tab="false">
         <entry file="file://C:/Go/src/runtime/panic.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="9911">
               <caret line="587" selection-start-line="587" selection-end-line="587" />
             </state>
           </provider>
@@ -42,7 +42,7 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -68,7 +68,7 @@
       <file leaf-file-name="main_test.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
+            <state relative-caret-position="663">
               <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
               <folding>
                 <element signature="e#14#104#0" expanded="true" />
@@ -120,6 +120,10 @@
       <find>fmt</find>
       <find>DataSignerCrc32</find>
       <find>struct</find>
+      <find>calcFirstStep</find>
+      <find>calcSecondStep</find>
+      <find>MultiHash</find>
+      <find>.order]</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\igbatov\go\src\GoLangCourseraMFTI\hw2_signer</dir>
@@ -158,7 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,6 +173,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,7 +183,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../golang-webservices-2/w1/middleware" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
@@ -265,27 +269,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 08h 47m 50s.xml">
-      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 08h 48m 13s.xml">
-      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 08h 48m 45s.xml">
-      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 08h 50m 19s.xml">
-      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 08h 50m 51s.xml">
-      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 08h 58m 50s.xml">
-      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 09h 05m 11s.xml">
-      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 09h 05m 19s.xml">
       <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -295,29 +278,49 @@
     <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 09h 14m 08s.xml">
       <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 09h 34m 20s.xml">
+      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 09h 35m 12s.xml">
+      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 09h 37m 45s.xml">
+      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 09h 37m 54s.xml">
+      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 09h 39m 24s.xml">
+      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 09h 39m 51s.xml">
+      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSigner_in_GoLangCourseraMFTI_hw2_signer - 2018.06.10 at 09h 40m 03s.xml">
+      <configuration name="TestSigner in GoLangCourseraMFTI/hw2_signer" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2626984" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26666668" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50079364" side_tool="true" weight="0.32744783" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.38523275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49920633" weight="0.32744783" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49920633" visible="true" weight="0.32744783" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42054576" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42054576" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,21 +331,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/signer.go</url>
-          <line>93</line>
-          <properties />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/signer.go</url>
-          <line>108</line>
-          <properties />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="50" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="GoTestRunConfiguration">
@@ -406,9 +395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#14#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,9 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#14#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -568,9 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#14#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,9 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#14#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,30 +687,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="133" column="5" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/runtime/panic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="587" selection-start-line="587" selection-end-line="587" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
+        <state relative-caret-position="663">
           <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
           <folding>
             <element signature="e#14#104#0" expanded="true" />
@@ -746,17 +709,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Go/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="133" column="5" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9911">
+          <caret line="587" selection-start-line="587" selection-end-line="587" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hw2.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+        <state relative-caret-position="986">
+          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/signer.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="17">
+          <caret line="94" column="18" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
         </state>
       </provider>
     </entry>
